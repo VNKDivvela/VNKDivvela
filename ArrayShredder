@@ -1,0 +1,23 @@
+class ArrayShredder{
+	var givenArryay, n, shreddedArray=[];
+	
+	//constructor 
+	constructor(array,n){
+		this.givenArray=array;
+		this.n=n;
+	}//End of constructor
+	
+	//Condion to check and continue the program if and only if given array is not empty and n is positive
+	(givenArray.lenght>0 && n>0 )?doShred():console.log("Given array is empty or pass positive integer as n"); 
+
+	doShred(){
+	
+		return shreddedArray= givenArray.map((e,i)=>{
+			return i%n===0?givenArray.slice(i,i+n):null;}).filter(e=>{return e;});
+	}//End of doShred()
+	
+	display(){
+		return shreddedArray;
+	}
+}//End of ArrayShredder Class
+	
